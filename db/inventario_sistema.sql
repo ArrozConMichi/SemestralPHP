@@ -134,9 +134,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
---Alter Table para el Rol y ver si el usuario esta activo o no
-ALTER TABLE `users`
-ADD `role` VARCHAR(50) NOT NULL DEFAULT 'collaborator' COMMENT 'Rol del usuario (admin, collaborator)' AFTER `company`,
-ADD `activo` TINYINT(1) NOT NULL DEFAULT 1 COMMENT 'Usuario activo (1) o inactivo (0)' AFTER `respuesta_seguridad`;
